@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans:wght@300;500&family=Poppins:wght@400;700&family=Roboto+Slab:wght@500&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home,
+.about,
+.skills,
+.projects,
+.resume,
+.contact {
+    height: 89vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(2, 2, 24);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 12, 56);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul a:hover {
+    color: rgb(12, 12, 56);
+    transition: 0.2s;
+    background-color: rgb(165, 165, 228);
+    padding: 5px 10px;
+}
+
+.home {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.home-text {
+    width: 45%;
+    margin-left: 101px;
+}
+
+.home-text h2 {
+    font-size: 54px;
+    margin: 20px 0;
+}
+
+.home-text h4 {
+    font-size: 30px;
+    margin: 20px 0;
+    margin-bottom: 20px;
+}
+
+.home-text span {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(118, 189, 255);
+}
+
+.home-text p{
+    font-size: 25px;
+    color: rgb(177, 94, 254);
+}
+/* .left {
+    font-size: 1.7rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 3rem;
+    margin: 70px 0;
+    background-color: red;
+    width: 10%;
+}
+
+.rightSection img {
+    width: 133%;
+    margin: 85px 0;
+    background-color: yellow;
+}
+
+.color {
+    color: blueviolet;
+}
+
+#element {
+    font-size: 40px;
+    color: blueviolet;
+    font-style: italic;
+} */
+
+.about {
+    margin-top: 60px;
+    color: rgb(176, 176, 232);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.about-img img {
+    width: 256px;
+    margin-top: 80px;
+    box-shadow: 1px 1px 10px #4187bd;
+    margin-left: 190px;
+    border-radius: 10px;
+}
+
+.about-info h2 {
+    margin-left: 90px;
+    font-size: 50px;
+}
+
+.about-desc p {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.skills {
+    margin-top: 60px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.skills-process {
+    background-color: rgb(165, 165, 228);
+    color: rgb(12, 12, 56);
+    height: 170px;
+    width: 170px;
+    margin: 0 30px;
+    border-radius: 50%;
+}
+
+.skills-process p {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.skill-progress {
+    margin: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.skill-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-line label {
+    font-size: 25px;
+}
+
+progress[value] {
+    width: 600px;
+    height: 35px;
+    accent-color: blueviolet;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.project {
+    margin-top: 60px;
+}
+
+.project h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.project-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 218, 247);
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 0 20px;
+    margin-top: 35px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px #4187bd;
+}
+
+.card1-image img {
+    width: 125px;
+}
+
+.card2-image img {
+    width: 223px;
+    margin-bottom: -35px;
+}
+
+.project-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card2 {
+    align-items: center;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    box-shadow: rgba(223, 225, 230, 0.708) 0px 2px 8px;
+    width: fit-content;
+    border-radius: 15px;
+    text-align: center;
+    margin: 35px 20px;
+    height: 390px;
+}
+
+.project-card2 p {
+    font-size: 15px;
+}
+
+.card-image img {
+    width: 80px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: small;
+    border-radius: 15px;
+    background-color: rgb(12, 12, 56);
+    color: rgb(232, 218, 247);
+    border: 2px solid rgb(176, 176, 232);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(232, 218, 247);
+    color: rgb(12, 12, 56);
+    transition: 0.3s;
+}
+
+.resume {
+    margin-top: 50px;
+}
+
+
+
+.resume-block {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100%;
+    background-image: url("Asset/bg.jpg");
+    background-size: cover;
+}
+
+.resume-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resume-image img {
+    border: 5px solid rgb(12, 12, 56);
+    margin-top: -40px;
+    display: flex;
+    text-align: center;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: rgb(48, 152, 243) 1px 1px 25px;
+}
+
+.resume-image h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(197, 197, 243);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-image button {
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: rgb(12, 12, 56);
+    color: rgb(232, 218, 247);
+    border: 2px solid rgb(176, 176, 232);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.resume-image button:hover {
+    background-color: rgb(232, 218, 247);
+    color: rgb(12, 12, 56);
+    transition: 0.3s;
+}
+
+.resume-container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-info {
+    padding: 20px;
+    width: 710px;
+    margin: 20px 30px;
+}
+
+.resume-container2 h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+.resume-container2 p {
+    margin: 0 90px
+}
+
+.resume-container2 h4 {
+    margin: 0 60px;
+}
+
+.resume-contact {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
+
+.resume-contact img {
+    width: 20px;
+}
+
+.contact {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact h2 {
+    font-size: 50px;
+}
+
+.mail {
+    background-color: rgb(54, 54, 108);
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: rgba(252, 253, 255, 0.796) 1px 1px 5px;
+}
+
+.mail img {
+    width: 45px;
+    margin-right: 15px;
+}
+
+.mail-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-text address a {
+    text-decoration: none;
+    color: rgb(197, 197, 243);
+}
+
+.contact {
+    width: 70%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(40, 33, 66, 0.768);
+    padding: 30px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 125px;
+    box-shadow: 1px 1px 10px #4d95cc;
+}
+
+/* .contact-right{
+    margin-left: 50px;
+} */
+
+.contact-right h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.contact-right form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input1 {
+    width: 450px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin: 5px 0;
+    background-color: rgb(197, 197, 243);
+    color: rgb(2, 2, 24);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+.input2 {
+    width: 450px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    background-color: rgb(197, 197, 243);
+    color: rgb(2, 2, 24);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#msg-btn {
+    padding: 5px 10px;
+    width: fit-content;
+    font-size: small;
+    border-radius: 7px;
+    background-color: rgb(12, 12, 56);
+    color: rgb(232, 218, 247);
+    border: 2px solid rgb(176, 176, 232);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#msg-btn:hover {
+    background-color: rgb(197, 197, 243);
+    color: rgb(12, 12, 56);
+    transition: 0.3s;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.logos img {
+    width: 35px;
+    padding: 5px;
+}
+
+.logos img:hover {
+    transform: scale(1) rotate(-5deg);
+    transition: 0.2s;
+    cursor: pointer;
+}
